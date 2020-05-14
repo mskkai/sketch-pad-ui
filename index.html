@@ -1,0 +1,183 @@
+<html>
+   <head>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta charset="utf-8">
+      <title>Sketch Pad</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimum-scale=1, maximum-scale=1">
+      <link type="text/css" rel="stylesheet" href="styles.css"/>
+   </head>
+   <body>
+      <div id="mobile-info">Mobile browser not supported. Please use desktop browser.</div>
+      <table id="sketch-pad" width=100% border="1" cellspacing=0>
+         <tr>
+            <td colspan="3" class="bg-header">
+                     <h1 class="header">Sketch pad</h1>
+            </td>
+         </tr>
+         <tr valign="top">
+            <td width=8%  class="bg-white">
+               <table class="mystyle" width="30" cellpadding=0 cellspacing=1>
+                  <tr>
+                     <td colspan=2 >
+                        <button title="To get a New Page" class="new-page" onclick="clearCanvas()">New
+                        File</button>
+                     </td>
+                  <tr>
+                  <tr>
+                     <th colspan=2  class="bg-main">Tools</th>
+                  </tr>
+                  <tr>
+                     <td><a type="button" onclick="changeToolValue('line')"
+                        title="Line"> <img src="./paint_images/line.png"
+                        /> </a></td>
+                     <td><a type="button" onclick="changeToolValue('sline')"
+                        title="St Line"> <img src="./paint_images/stline.png"
+                        /> </a></td>
+                  </tr>
+                  <tr>
+                     <td><a type="button" onclick="changeToolValue('etriangle')"
+                        title="Triangle"> <img
+                        src="./paint_images/triangle.png"  />
+                        </a>
+                     </td>
+                     <td><a type="button" onclick="changeToolValue('triangle')"
+                        title="right Triangle"> <img
+                        src="./paint_images/RightTriangle.png"  /> </a></td>
+                  </tr>
+                  <tr>
+                     <td><a type="button" onclick="changeToolValue('circle')"
+                        title="Circle"> <img src="./paint_images/circle.png"
+                        /> </a></td>
+                     <td><a type="button" onclick="changeToolValue('square')"
+                        title="Square"> <img src="./paint_images/square.png"
+                        /> </a></td>
+                  </tr>
+                  <tr>
+                     <td><a type="button" onclick="changeToolValue('rectangle')"
+                        title="Rectangle"> <img
+                        src="./paint_images/rectangle.png"  />
+                        </a>
+                     </td>
+                     <td><a type="button" onclick="changeToolValue('eraser')"
+                        title="Eraser"> <img src="./paint_images/eraser.png"
+                        /> </a></td>
+                  </tr>
+                  <tr>
+                     <td><a type="button" onclick="changeToolValue('brush')"
+                        title="Brush"> <img src="./paint_images/Brush.png"
+                        /> </a></td>
+                     <td><a type="button" onclick="changeToolValue('pencil')"
+                        title="Pencil" checked> <img
+                        src="./paint_images/pencil.png"  />
+                        </a>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td><a type="button" onclick="changeToolValue('qcurve')"
+                        title="Curve"> <img src="./paint_images/curve.png"
+                        /> </a></td>
+                     <td><a type="button" onclick="changeToolValue('bcurve')"
+                        title="B-Curve"> <img src="./paint_images/bcurve.png"
+                        /> </a></td>
+                  </tr>
+                  <tr>
+                     <td colspan=2  class="bg-main"><b>Size</b></td>
+                  </tr>
+                  <tr>
+                     <td colspan=2>
+                        <select id="linewidth" class="dropdown"
+                           title="To alter the size of tools">
+                           <option value=1 selected>Small
+                           <option value=5>Medium
+                           <option value=10>Large
+                        </select>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td colspan=2  class="bg-main"><b>OutLine</b></td>
+                  </tr>
+                  <tr>
+                     <td colspan=2>
+                        <select id="outline" class="dropdown"
+                           title="To change outline">
+                           <option value=0 selected>Stroke
+                           <option value=1>Fill
+                        </select>
+                     </td>
+                  </tr>
+                  <tr>
+                  </tr>
+                  <tr>
+                  </tr>
+                  <tr>
+                     <td colspan=2  class="bg-main"><b>Color
+                        </b>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td colspan=2>
+                        <select id="outlineStyle" class="dropdown"
+                           title="To change color:
+                           after selecting click on the color picker which is on the right side">
+                           <option value=0>Stroke
+                           <option value=1>Fill
+                        </select>
+                     </td>
+				  </tr>
+                  <tr>
+                     <td colspan=2  title="To scold me:)" class="mail-to"><a
+                        href="mailto:msasikumarbeeee@gmail.com&subject=Sketchpad%20Feedback"><img
+                        src="./paint_images/mail.png"/><a><br>
+                        Comments are Welcome!
+                     </td>
+                  <tr>
+               </table>
+            </td>
+            <td width=60%>
+               <canvas id="myCanvas" width="980" height="510"
+                  >
+                  Your browser does not support the canvas element. 
+               </canvas>
+               <canvas
+                  id="imageTemp" width="980" height="510"
+                  > Your
+                  browser does not support the canvas element. 
+               </canvas>
+            </td>
+            <td width=30% cellspacing=10 class="bg-white">
+               <table width=100% >
+                  <tr>
+                     <td class="bg-main" ><b>
+                        Color</b>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td title="Click to pick color">
+                        <canvas id="colorpick"
+                           width="256" height="200"> Your browser does not support
+                           the canvas element. 
+                        </canvas>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td colspan=2  class="bg-main"><b>Preview
+                        </b>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td  class="bg-white" width=200
+                        height=220><img id="preview" alt="save image"></img></td>
+                  </tr>
+                  <tr>
+                     <td class="img-preview"
+                        title="To save as image: right click on the image in preview->Then click save image as">To
+                        save as image right click above
+                     </td>
+                  </tr>
+               </table>
+            </td>
+         </tr>
+      </table>
+      <script src="index.js"></script>
+   </body>
+</html>

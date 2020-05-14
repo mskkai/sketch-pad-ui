@@ -1,0 +1,95 @@
+body {
+  font-family: Georgia, Times, "Times New Roman", serif;
+  display: flex;
+  margin: 0;
+}
+
+#sketchpad {
+  position: relative;
+}
+
+#myCanvas {
+  border: 1px solid #dad4d4;
+  background-color: #fff;
+}
+
+#imageTemp {
+  position: absolute;
+  left: 100px;
+  border: 1px solid #dad4d4;
+}
+
+table.mystyle tr td a img:hover,
+table.mystyle tr td:hover {
+  color: black;
+  box-shadow: 0 0 5px rgb(99, 204, 245);
+  -webkit-box-shadow: 0 0 5px rgb(99, 204, 245);
+  padding-top: 0.5px;
+  padding-bottom: 0.5px;
+}
+
+.dropdown {
+  background: transparent;
+  background-color: #ecffff;
+  padding: 5px;
+  width: 87;
+  border: 1px solid rgb(99, 204, 245);
+}
+
+#mobile-info,
+.header {
+  color: #000;
+  font: italic 700 50px/1 "Playfair Display", serif;
+  margin: 24px;
+}
+
+.bg-header {
+  background-color: #2fd2ce87;
+}
+
+.bg-white {
+  background-color: #fff;
+}
+
+.bg-blue {
+  background-color: rgb(99, 204, 245);
+}
+
+.bg-main {
+  background-color: #dad4d4;
+}
+
+img {
+  width: 43px;
+  height: 30px;
+}
+
+#preview {
+  width: 200px;
+  height: 220px;
+}
+
+.img-preview {
+  background-color: #f7f6f6;
+  border: 1px solid #dad4d4;
+  text-align: center;
+}
+
+td {
+  text-align: center;
+  border: 1px solid #dad4d4;
+}
+
+.mail-to {
+  width: 50px;
+  height: 50px;
+  padding-top: 1px;
+  background-color: #f7f6f6;
+}
+
+.new-page {
+  width: 88px;
+  height: 30px;
+  background-color: #ecffff;
+  border: 1px solid rgb(99, 204, 245);
+}
