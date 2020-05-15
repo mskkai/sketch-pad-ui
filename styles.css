@@ -19,6 +19,11 @@ body {
   border: 1px solid #dad4d4;
 }
 
+#mobile-info,
+#sketch-pad {
+  display: none;
+}
+
 table.mystyle tr td a img:hover,
 table.mystyle tr td:hover {
   color: black;

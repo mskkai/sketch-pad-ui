@@ -48,8 +48,6 @@ window.onload = function () {
     //     document.getElementById('imageTemp').style.top = 74;
     // }
 
-    document.getElementById("sketch-pad").style.display = "none";
-    document.getElementById("mobile-info").style.display = "none";
     var isMobileDevice = window.matchMedia("(hover: none),(pointer: coarse)").matches
 
     if (isMobileDevice) {

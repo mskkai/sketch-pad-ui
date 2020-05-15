@@ -27,4 +27,6 @@ A HTML5 based sketch pad application
 
 - Application is currently deployed in firebase in the below URL.
 
+https://sketch-pad.web.app/
+
 - Access the same to experience the functionality
